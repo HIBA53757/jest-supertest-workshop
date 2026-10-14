@@ -21,7 +21,7 @@ app.use("/api/modules", moduleRoutes);
 app.use("/api", enrollmentRoutes);
 app.use("/api/resources",resourceRoutes)
 
-const PORT = process.env.PORT || 3001;
+
 
 app.get("/", (req, res) => {
   res.send("LMS API is running");
@@ -29,8 +29,6 @@ app.get("/", (req, res) => {
 
 app.use(notFound);
 app.use(errorHandler);
-connectDB();
 
-app.listen(PORT, () => {
-  console.log(`server running on http://localhost:${PORT}`);
-});
+
+export default app;
