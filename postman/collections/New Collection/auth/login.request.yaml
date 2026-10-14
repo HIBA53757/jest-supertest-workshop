@@ -1,5 +1,4 @@
 $kind: http-request
-name: New Request
 url: "{{url}}/api/auth/login"
 method: POST
 body:

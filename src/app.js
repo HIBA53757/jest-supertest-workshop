@@ -1,6 +1,5 @@
 import express from "express";
 import dotenv from "dotenv";
-import { connectDB } from "./config/database.js";
 import courseRoutes from "./routes/courseRoutes.js";
 import moduleRoutes from "./routes/moduleRoutes.js";
 import enrollmentRoutes from "./routes/enrollmentRoutes.js";
